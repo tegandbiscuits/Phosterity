@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */; };
-		5BFAE94E2C79566C003FE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* ContentView.swift */; };
-		5BFAE9502C79566C003FE344 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94F2C79566C003FE344 /* Item.swift */; };
+		5BFAE94E2C79566C003FE344 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* MainScreen.swift */; };
+		5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94F2C79566C003FE344 /* PhotoDetail.swift */; };
 		5BFAE9522C79566D003FE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9512C79566D003FE344 /* Assets.xcassets */; };
 		5BFAE9552C79566D003FE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */; };
 		5BFAE95F2C79566D003FE344 /* PhosterityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE95E2C79566D003FE344 /* PhosterityTests.swift */; };
@@ -37,8 +37,8 @@
 /* Begin PBXFileReference section */
 		5BFAE9482C79566C003FE344 /* Phosterity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phosterity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityApp.swift; sourceTree = "<group>"; };
-		5BFAE94D2C79566C003FE344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5BFAE94F2C79566C003FE344 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5BFAE94D2C79566C003FE344 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		5BFAE94F2C79566C003FE344 /* PhotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
 		5BFAE9512C79566D003FE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */,
-				5BFAE94D2C79566C003FE344 /* ContentView.swift */,
-				5BFAE94F2C79566C003FE344 /* Item.swift */,
+				5BFAE94D2C79566C003FE344 /* MainScreen.swift */,
+				5BFAE94F2C79566C003FE344 /* PhotoDetail.swift */,
 				5BFAE9512C79566D003FE344 /* Assets.xcassets */,
 				5BFAE9532C79566D003FE344 /* Preview Content */,
 			);
@@ -260,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BFAE94E2C79566C003FE344 /* ContentView.swift in Sources */,
-				5BFAE9502C79566C003FE344 /* Item.swift in Sources */,
+				5BFAE94E2C79566C003FE344 /* MainScreen.swift in Sources */,
+				5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */,
 				5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

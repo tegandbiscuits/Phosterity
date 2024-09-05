@@ -23,6 +23,7 @@ struct PhotoDetailView: View {
 
   @ViewBuilder private var map: some View {
     let mapZoom: Double = 500
+    let mapHeight: CGFloat = 300
 
     Map(bounds: MapCameraBounds(minimumDistance: mapZoom)) {
       let coord = CLLocationCoordinate2D(
@@ -38,6 +39,7 @@ struct PhotoDetailView: View {
       MapCompass()
     }
     .mapStyle(.standard(elevation: .realistic))
+    .frame(height: mapHeight)
   }
 }
 

@@ -23,12 +23,9 @@ struct MainScreen: View {
       List {
         ForEach(photoDetails) { photoDetail in
           let label = photoDetail.timestamp.formatted(Date.FormatStyle(date: .numeric, time: .standard))
-          NavigationLink(label, value: photoDetail)
-            .navigationDestination(for: PhotoDetail.self) { value in
-              Text("the location: \(locationManager.location?.description ?? "jk")")
-              Text("Second screen")
-              Text("Value is \(value)")
-            }
+          NavigationLink(label) {
+            PhotoDetailScreen(location: locationManager.location, photoDetail: photoDetail)
+          }
         }
         .onDelete(perform: deletePhotoDetail)
       }

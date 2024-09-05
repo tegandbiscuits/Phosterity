@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12EDBB2C8966B800022E0D /* LocationManager.swift */; };
+		5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */; };
 		5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */; };
 		5BFAE94E2C79566C003FE344 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* MainScreen.swift */; };
 		5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94F2C79566C003FE344 /* PhotoDetail.swift */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B12EDBB2C8966B800022E0D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5BFAE9482C79566C003FE344 /* Phosterity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phosterity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityApp.swift; sourceTree = "<group>"; };
 		5BFAE94D2C79566C003FE344 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B955FCB2C8964C600FC2C8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BFAE93F2C79566C003FE344 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +94,7 @@
 				5BFAE95D2C79566D003FE344 /* PhosterityTests */,
 				5BFAE9672C79566D003FE344 /* PhosterityUITests */,
 				5BFAE9492C79566C003FE344 /* Products */,
+				5B955FCB2C8964C600FC2C8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,11 +111,13 @@
 		5BFAE94A2C79566C003FE344 /* Phosterity */ = {
 			isa = PBXGroup;
 			children = (
+				5B955FCA2C8961C300FC2C8B /* Info.plist */,
 				5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */,
 				5BFAE94D2C79566C003FE344 /* MainScreen.swift */,
 				5BFAE94F2C79566C003FE344 /* PhotoDetail.swift */,
 				5BFAE9512C79566D003FE344 /* Assets.xcassets */,
 				5BFAE9532C79566D003FE344 /* Preview Content */,
+				5B12EDBB2C8966B800022E0D /* LocationManager.swift */,
 			);
 			path = Phosterity;
 			sourceTree = "<group>";
@@ -260,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */,
 				5BFAE94E2C79566C003FE344 /* MainScreen.swift in Sources */,
 				5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */,
 				5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */,
@@ -429,6 +447,8 @@
 				DEVELOPMENT_TEAM = M2X7LT3N36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Phosterity/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location used to remember where photos were taken.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,6 +461,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.Phosterity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +481,8 @@
 				DEVELOPMENT_TEAM = M2X7LT3N36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Phosterity/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location used to remember where photos were taken.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -470,6 +495,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.Phosterity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

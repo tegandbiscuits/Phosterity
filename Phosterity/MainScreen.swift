@@ -1,24 +1,32 @@
 import SwiftUI
 import SwiftData
+import MapKit
 
 struct MainScreen: View {
   @Environment(\.modelContext) private var modelContext
   @Query private var photoDetails: [PhotoDetail]
 
   var body: some View {
-    VStack {
+    NavigationStack {
+      Map()
       List {
         ForEach(photoDetails) { photoDetail in
-          Text("sup \(photoDetail.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+          var label = photoDetail.timestamp.formatted(Date.FormatStyle(date: .numeric, time: .standard))
+          NavigationLink(label, value: photoDetail)
+            .navigationDestination(for: PhotoDetail.self) { value in
+              Text("Second screen")
+              Text("Value is \(value)")
+            }
         }
         .onDelete(perform: deletePhotoDetail)
       }
-
-      Spacer()
-
-      Button("Capture Moment", systemImage: "camera", action: addPhotoDetail)
-        .buttonStyle(.borderedProminent)
-        .controlSize(.extraLarge)
+      .toolbar {
+        ToolbarItemGroup(placement: .bottomBar)  {
+          Button("Capture Moment", systemImage: "camera", action: addPhotoDetail)
+            .buttonStyle(.borderedProminent)
+            .controlSize(.extraLarge)
+        }
+      }
     }
   }
 

@@ -35,8 +35,7 @@ struct PhotoDetailView: View {
   }
 
   @ViewBuilder private var map: some View {
-    // TODO: zoom out inital
-    Map {
+    Map(bounds: MapCameraBounds(minimumDistance: 500)) {
       let coord = CLLocationCoordinate2D(
         latitude: photoDetail.latitude,
         longitude: photoDetail.longitude

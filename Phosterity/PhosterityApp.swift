@@ -18,7 +18,7 @@ struct PhosterityApp: App {
 
   var body: some Scene {
     WindowGroup {
-      MainScreen()
+      IndexView()
     }
     .modelContainer(sharedModelContainer)
   }

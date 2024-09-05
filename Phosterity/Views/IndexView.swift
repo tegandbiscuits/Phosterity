@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 import MapKit
 
-struct MainScreen: View {
+struct IndexView: View {
   @Environment(\.modelContext) private var modelContext
   @Query private var photoDetails: [PhotoDetail]
 
@@ -24,7 +24,7 @@ struct MainScreen: View {
         ForEach(photoDetails) { photoDetail in
           let label = photoDetail.timestamp.formatted(Date.FormatStyle(date: .numeric, time: .standard))
           NavigationLink(label) {
-            PhotoDetailScreen(location: locationManager.location, photoDetail: photoDetail)
+            PhotoDetailView(location: locationManager.location, photoDetail: photoDetail)
           }
         }
         .onDelete(perform: deletePhotoDetail)
@@ -59,6 +59,6 @@ struct MainScreen: View {
 }
 
 #Preview {
-  MainScreen()
+  IndexView()
     .modelContainer(for: PhotoDetail.self, inMemory: true)
 }

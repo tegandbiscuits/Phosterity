@@ -1,7 +1,7 @@
 import SwiftUI
 import CoreLocation
 
-struct PhotoDetailScreen: View {
+struct PhotoDetailView: View {
   let location: CLLocation?
   let photoDetail: PhotoDetail
 
@@ -12,6 +12,6 @@ struct PhotoDetailScreen: View {
   }
 }
 
-//#Preview {
-//    PhotoDetailScreen()
-//}
+#Preview {
+  PhotoDetailView(location: nil, photoDetail: PhotoDetail())
+}

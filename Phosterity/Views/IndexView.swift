@@ -15,7 +15,7 @@ struct IndexView: View {
       map
       photoList
         .toolbar {
-          ToolbarItemGroup(placement: .bottomBar)  {
+          ToolbarItemGroup(placement: .bottomBar) {
             Button("Capture Moment", systemImage: "camera", action: addPhotoDetail)
               .buttonStyle(.borderedProminent)
               .controlSize(.extraLarge)

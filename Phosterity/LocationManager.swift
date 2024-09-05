@@ -3,7 +3,7 @@ import CoreLocation
 
 @Observable
 final class LocationManager {
-  var location: CLLocation? = nil
+  var location: CLLocation?
 
   private let locationManager = CLLocationManager()
 

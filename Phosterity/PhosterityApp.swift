@@ -5,7 +5,7 @@ import SwiftData
 struct PhosterityApp: App {
   var sharedModelContainer: ModelContainer = {
     let schema = Schema([
-      PhotoDetail.self,
+      PhotoDetail.self
     ])
     let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

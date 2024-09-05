@@ -15,4 +15,8 @@ final class PhotoDetail {
     self.latitude = lat
     self.longitude = lon
   }
+
+  func labelText() -> String {
+    return timestamp.formatted(Date.FormatStyle(date: .numeric, time: .standard))
+  }
 }

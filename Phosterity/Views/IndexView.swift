@@ -12,34 +12,50 @@ struct IndexView: View {
 
   var body: some View {
     NavigationStack {
-      Map(position: $position)
-      .mapControls {
-        MapScaleView()
-        MapCompass()
-        MapUserLocationButton()
-      }
-      .mapStyle(.standard(elevation: .realistic))
-
-      List {
-        ForEach(photoDetails) { photoDetail in
-          let label = photoDetail.timestamp.formatted(Date.FormatStyle(date: .numeric, time: .standard))
-          NavigationLink(label) {
-            PhotoDetailView(photoDetail: photoDetail)
+      map
+      photoList
+        .toolbar {
+          ToolbarItemGroup(placement: .bottomBar)  {
+            Button("Capture Moment", systemImage: "camera", action: addPhotoDetail)
+              .buttonStyle(.borderedProminent)
+              .controlSize(.extraLarge)
           }
         }
-        .onDelete(perform: deletePhotoDetail)
-      }
-      .toolbar {
-        ToolbarItemGroup(placement: .bottomBar)  {
-          Button("Capture Moment", systemImage: "camera", action: addPhotoDetail)
-            .buttonStyle(.borderedProminent)
-            .controlSize(.extraLarge)
-        }
-      }
     }
     .task {
       try? await locationManager.requestUserAuthorization()
       try? await locationManager.startCurrentLocationUpdates()
+    }
+  }
+
+  @ViewBuilder private var map: some View {
+    Map(position: $position) {
+      ForEach(photoDetails) { photoDetail in
+        let coord = CLLocationCoordinate2D(
+          latitude: photoDetail.latitude,
+          longitude: photoDetail.longitude
+        )
+        Marker(coordinate: coord) {
+          Text(photoDetail.labelText())
+        }
+      }
+    }
+    .mapControls {
+      MapScaleView()
+      MapCompass()
+      MapUserLocationButton()
+    }
+    .mapStyle(.standard(elevation: .realistic))
+  }
+
+  @ViewBuilder private var photoList: some View {
+    List {
+      ForEach(photoDetails) { photoDetail in
+        NavigationLink(photoDetail.labelText()) {
+          PhotoDetailView(photoDetail: photoDetail)
+        }
+      }
+      .onDelete(perform: deletePhotoDetail)
     }
   }
 

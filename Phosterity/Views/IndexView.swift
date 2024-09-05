@@ -24,7 +24,7 @@ struct IndexView: View {
         ForEach(photoDetails) { photoDetail in
           let label = photoDetail.timestamp.formatted(Date.FormatStyle(date: .numeric, time: .standard))
           NavigationLink(label) {
-            PhotoDetailView(location: locationManager.location, photoDetail: photoDetail)
+            PhotoDetailView(photoDetail: photoDetail)
           }
         }
         .onDelete(perform: deletePhotoDetail)
@@ -45,7 +45,16 @@ struct IndexView: View {
 
   private func addPhotoDetail() {
     withAnimation {
-      modelContext.insert(PhotoDetail())
+      if let loc = locationManager.location {
+        let detail = PhotoDetail(
+          time: loc.timestamp,
+          lat: loc.coordinate.latitude,
+          lon: loc.coordinate.longitude
+        )
+        modelContext.insert(detail)
+      } else {
+        print("need to handle no location")
+      }
     }
   }
 

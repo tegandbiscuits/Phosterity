@@ -36,7 +36,7 @@ struct IndexView: View {
           longitude: photoDetail.longitude
         )
         Marker(coordinate: coord) {
-          Text(photoDetail.labelText())
+          Text(photoDetail.formattedLabel())
         }
       }
     }
@@ -51,7 +51,7 @@ struct IndexView: View {
   @ViewBuilder private var photoList: some View {
     List {
       ForEach(photoDetails) { photoDetail in
-        NavigationLink(photoDetail.labelText()) {
+        NavigationLink(photoDetail.formattedLabel()) {
           PhotoDetailView(photoDetail: photoDetail)
         }
       }

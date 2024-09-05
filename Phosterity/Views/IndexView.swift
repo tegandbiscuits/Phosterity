@@ -1,9 +1,11 @@
-import SwiftUI
-import SwiftData
 import MapKit
+import SwiftData
+import SwiftUI
 
 struct IndexView: View {
-  @Environment(\.modelContext) private var modelContext
+  @Environment(\.modelContext)
+  private var modelContext
+
   @Query private var photoDetails: [PhotoDetail]
 
   @State private var locationManager = LocationManager()

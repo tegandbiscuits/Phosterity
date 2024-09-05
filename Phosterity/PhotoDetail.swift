@@ -1,6 +1,6 @@
+import CoreLocation
 import Foundation
 import SwiftData
-import CoreLocation
 
 @Model
 final class PhotoDetail {
@@ -17,14 +17,14 @@ final class PhotoDetail {
   }
 
   func formattedDate() -> String {
-    return timestamp.formatted(Date.FormatStyle(date: .numeric))
+    timestamp.formatted(Date.FormatStyle(date: .numeric))
   }
 
   func formattedTime() -> String {
-    return timestamp.formatted(Date.FormatStyle(time: .standard))
+    timestamp.formatted(Date.FormatStyle(time: .standard))
   }
 
   func formattedLabel() -> String {
-    return "\(formattedDate()) \(formattedTime())"
+    "\(formattedDate()) \(formattedTime())"
   }
 }

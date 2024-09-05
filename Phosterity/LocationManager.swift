@@ -1,5 +1,5 @@
-import Foundation
 import CoreLocation
+import Foundation
 
 @Observable
 final class LocationManager {
@@ -13,7 +13,9 @@ final class LocationManager {
 
   func startCurrentLocationUpdates() async throws {
     for try await locationUpdate in CLLocationUpdate.liveUpdates() {
-      guard let location = locationUpdate.location else { return }
+      guard let location = locationUpdate.location else {
+        return
+      }
       self.location = location
     }
   }

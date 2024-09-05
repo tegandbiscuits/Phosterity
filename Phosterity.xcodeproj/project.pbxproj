@@ -10,6 +10,7 @@
 		5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12EDBB2C8966B800022E0D /* LocationManager.swift */; };
 		5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */; };
 		5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9964AF2C8A459000347354 /* PhotoDetailView.swift */; };
+		5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */; };
 		5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */; };
 		5BFAE94E2C79566C003FE344 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* IndexView.swift */; };
 		5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94F2C79566C003FE344 /* PhotoDetail.swift */; };
@@ -42,6 +43,7 @@
 		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B9964AF2C8A459000347354 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDetailView+DetailRow.swift"; sourceTree = "<group>"; };
 		5BFAE9482C79566C003FE344 /* Phosterity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phosterity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityApp.swift; sourceTree = "<group>"; };
 		5BFAE94D2C79566C003FE344 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				5B9964AF2C8A459000347354 /* PhotoDetailView.swift */,
 				5BFAE94D2C79566C003FE344 /* IndexView.swift */,
+				5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */,
 				5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */,
+				5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */,
 				5BFAE94E2C79566C003FE344 /* IndexView.swift in Sources */,
 				5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */,
 				5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */,

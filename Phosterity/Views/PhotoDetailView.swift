@@ -1,18 +1,5 @@
-import SwiftUI
 import MapKit
-
-struct DetailRow: View {
-  let title: String
-  let value: String
-
-  var body: some View {
-    HStack {
-      Text(title).foregroundStyle(.secondary)
-      Spacer()
-      Text(value)
-    }
-  }
-}
+import SwiftUI
 
 struct PhotoDetailView: View {
   let photoDetail: PhotoDetail
@@ -35,7 +22,9 @@ struct PhotoDetailView: View {
   }
 
   @ViewBuilder private var map: some View {
-    Map(bounds: MapCameraBounds(minimumDistance: 500)) {
+    let mapZoom: Double = 500
+
+    Map(bounds: MapCameraBounds(minimumDistance: mapZoom)) {
       let coord = CLLocationCoordinate2D(
         latitude: photoDetail.latitude,
         longitude: photoDetail.longitude
@@ -53,11 +42,14 @@ struct PhotoDetailView: View {
 }
 
 #Preview {
-  PhotoDetailView(
+  let esbLat = 40.748817
+  let esbLon = -73.985428
+
+  return PhotoDetailView(
     photoDetail: PhotoDetail(
       time: Date(),
-      lat: CLLocationDegrees(40.748817),
-      lon: CLLocationDegrees(-73.985428)
+      lat: CLLocationDegrees(esbLat),
+      lon: CLLocationDegrees(esbLon)
     )
   )
 }

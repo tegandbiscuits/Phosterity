@@ -18,7 +18,7 @@ struct IndexView: View {
       photoList
         .toolbar {
           ToolbarItemGroup(placement: .bottomBar) {
-            Button("Capture Moment", systemImage: "camera", action: addPhotoDetail)
+            Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
               .buttonStyle(.borderedProminent)
               .controlSize(.extraLarge)
           }

@@ -59,6 +59,7 @@ struct IndexView: View {
       }
       .onDelete(perform: deletePhotoDetail)
     }
+    .accessibilityLabel("Photo detail list")
   }
 
   private func addPhotoDetail() {

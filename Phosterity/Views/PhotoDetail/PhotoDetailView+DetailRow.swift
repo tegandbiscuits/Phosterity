@@ -3,6 +3,7 @@ import SwiftUI
 extension PhotoDetailView {
   struct DetailRow: View {
     let title: String
+
     let value: String
 
     var body: some View {
@@ -11,6 +12,13 @@ extension PhotoDetailView {
         Spacer()
         Text(value)
       }
+      .contextMenu {
+        Button("Copy Value", action: copy)
+      }
+    }
+
+    func copy() {
+      UIPasteboard.general.string = value
     }
   }
 }

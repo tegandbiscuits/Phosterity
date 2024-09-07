@@ -1,6 +1,8 @@
-import MapKit
+import BottomSheet
 import SwiftData
 import SwiftUI
+
+let kSheetMediumHeight: CGFloat = 375
 
 struct IndexView: View {
   @Environment(\.modelContext)
@@ -10,12 +12,20 @@ struct IndexView: View {
 
   @State private var locationManager = LocationManager()
 
-  @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
+  @State private var bottomSheetPosition: BottomSheetPosition = .absolute(kSheetMediumHeight)
 
   var body: some View {
     NavigationStack {
-      map
-      photoList
+      PhotoMap()
+        .bottomSheet(
+          bottomSheetPosition: $bottomSheetPosition,
+          switchablePositions: [
+            .dynamicTop,
+            .absolute(kSheetMediumHeight)
+          ]
+        ) {
+          PhotoList(onDelete: deletePhotoDetail)
+        }
         .toolbar {
           ToolbarItemGroup(placement: .bottomBar) {
             Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
@@ -23,43 +33,12 @@ struct IndexView: View {
               .controlSize(.extraLarge)
           }
         }
+        .toolbarBackground(.visible, for: .bottomBar)
     }
     .task {
       try? await locationManager.requestUserAuthorization()
       try? await locationManager.startCurrentLocationUpdates()
     }
-  }
-
-  @ViewBuilder private var map: some View {
-    Map(position: $position) {
-      ForEach(photoDetails) { photoDetail in
-        let coord = CLLocationCoordinate2D(
-          latitude: photoDetail.latitude,
-          longitude: photoDetail.longitude
-        )
-        Marker(coordinate: coord) {
-          Text(photoDetail.formattedLabel())
-        }
-      }
-    }
-    .mapControls {
-      MapScaleView()
-      MapCompass()
-      MapUserLocationButton()
-    }
-    .mapStyle(.standard(elevation: .realistic))
-  }
-
-  @ViewBuilder private var photoList: some View {
-    List {
-      ForEach(photoDetails) { photoDetail in
-        NavigationLink(photoDetail.formattedLabel()) {
-          PhotoDetailView(photoDetail: photoDetail)
-        }
-      }
-      .onDelete(perform: deletePhotoDetail)
-    }
-    .accessibilityLabel("Photo detail list")
   }
 
   private func addPhotoDetail() {

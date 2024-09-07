@@ -5,8 +5,9 @@ struct PhotoDetailView: View {
   let photoDetail: PhotoDetail
 
   var body: some View {
-    VStack {
-      map
+    VStack(spacing: 0) {
+      DetailMap(photoDetail: photoDetail)
+
       List {
         Section(header: Text("Location")) {
           DetailRow(title: "Latitude:", value: String(photoDetail.latitude))
@@ -19,27 +20,6 @@ struct PhotoDetailView: View {
         }
       }
     }
-  }
-
-  @ViewBuilder private var map: some View {
-    let mapZoom: Double = 500
-    let mapHeight: CGFloat = 300
-
-    Map(bounds: MapCameraBounds(minimumDistance: mapZoom)) {
-      let coord = CLLocationCoordinate2D(
-        latitude: photoDetail.latitude,
-        longitude: photoDetail.longitude
-      )
-      Marker(coordinate: coord) {
-        Text(photoDetail.formattedLabel())
-      }
-    }
-    .mapControls {
-      MapScaleView()
-      MapCompass()
-    }
-    .mapStyle(.standard(elevation: .realistic))
-    .frame(height: mapHeight)
   }
 }
 

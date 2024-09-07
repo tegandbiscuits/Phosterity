@@ -1,6 +1,9 @@
+import BottomSheet
 import MapKit
 import SwiftData
 import SwiftUI
+
+let kSheetMediumHeight: CGFloat = 375
 
 struct IndexView: View {
   @Environment(\.modelContext)
@@ -12,10 +15,20 @@ struct IndexView: View {
 
   @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
 
+  @State private var bottomSheetPosition: BottomSheetPosition = .absolute(kSheetMediumHeight)
+
   var body: some View {
     NavigationStack {
       map
-      photoList
+        .bottomSheet(
+          bottomSheetPosition: $bottomSheetPosition,
+          switchablePositions: [
+            .dynamicTop,
+            .absolute(kSheetMediumHeight)
+          ]
+        ) {
+          photoList
+        }
         .toolbar {
           ToolbarItemGroup(placement: .bottomBar) {
             Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
@@ -23,6 +36,7 @@ struct IndexView: View {
               .controlSize(.extraLarge)
           }
         }
+        .toolbarBackground(.visible, for: .bottomBar)
     }
     .task {
       try? await locationManager.requestUserAuthorization()
@@ -59,6 +73,7 @@ struct IndexView: View {
       }
       .onDelete(perform: deletePhotoDetail)
     }
+    .scrollContentBackground(.hidden)
     .accessibilityLabel("Photo detail list")
   }
 

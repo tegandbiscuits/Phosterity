@@ -11,6 +11,8 @@
 		5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */; };
 		5B97CCB92C8BA0D00067CFFF /* PhotoDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97CCB82C8BA0D00067CFFF /* PhotoDetailTests.swift */; };
 		5B97CCC32C8BD2650067CFFF /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5B97CCC22C8BD2650067CFFF /* BottomSheet */; };
+		5B97CCC72C8BDD5E0067CFFF /* IndexView+PhotoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97CCC62C8BDD5E0067CFFF /* IndexView+PhotoMap.swift */; };
+		5B97CCC92C8BDEF60067CFFF /* IndexView+PhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97CCC82C8BDEF60067CFFF /* IndexView+PhotoList.swift */; };
 		5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9964AF2C8A459000347354 /* PhotoDetailView.swift */; };
 		5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */; };
 		5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */; };
@@ -44,6 +46,8 @@
 		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B97CCB82C8BA0D00067CFFF /* PhotoDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailTests.swift; sourceTree = "<group>"; };
+		5B97CCC62C8BDD5E0067CFFF /* IndexView+PhotoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexView+PhotoMap.swift"; sourceTree = "<group>"; };
+		5B97CCC82C8BDEF60067CFFF /* IndexView+PhotoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexView+PhotoList.swift"; sourceTree = "<group>"; };
 		5B9964AF2C8A459000347354 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDetailView+DetailRow.swift"; sourceTree = "<group>"; };
 		5BFAE9482C79566C003FE344 /* Phosterity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phosterity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,12 +97,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5B9964B22C8A518600347354 /* Views */ = {
+		5B97CCC42C8BDCF30067CFFF /* PhotoDetail */ = {
 			isa = PBXGroup;
 			children = (
 				5B9964AF2C8A459000347354 /* PhotoDetailView.swift */,
-				5BFAE94D2C79566C003FE344 /* IndexView.swift */,
 				5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */,
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		5B97CCC52C8BDD1B0067CFFF /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				5BFAE94D2C79566C003FE344 /* IndexView.swift */,
+				5B97CCC62C8BDD5E0067CFFF /* IndexView+PhotoMap.swift */,
+				5B97CCC82C8BDEF60067CFFF /* IndexView+PhotoList.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		5B9964B22C8A518600347354 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B97CCC52C8BDD1B0067CFFF /* Index */,
+				5B97CCC42C8BDCF30067CFFF /* PhotoDetail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,9 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B97CCC92C8BDEF60067CFFF /* IndexView+PhotoList.swift in Sources */,
 				5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */,
 				5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */,
 				5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */,
+				5B97CCC72C8BDD5E0067CFFF /* IndexView+PhotoMap.swift in Sources */,
 				5BFAE94E2C79566C003FE344 /* IndexView.swift in Sources */,
 				5BFAE9502C79566C003FE344 /* PhotoDetail.swift in Sources */,
 				5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */,

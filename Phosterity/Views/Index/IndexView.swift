@@ -1,5 +1,4 @@
 import BottomSheet
-import MapKit
 import SwiftData
 import SwiftUI
 
@@ -13,13 +12,11 @@ struct IndexView: View {
 
   @State private var locationManager = LocationManager()
 
-  @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
-
   @State private var bottomSheetPosition: BottomSheetPosition = .absolute(kSheetMediumHeight)
 
   var body: some View {
     NavigationStack {
-      map
+      PhotoMap()
         .bottomSheet(
           bottomSheetPosition: $bottomSheetPosition,
           switchablePositions: [
@@ -27,7 +24,7 @@ struct IndexView: View {
             .absolute(kSheetMediumHeight)
           ]
         ) {
-          photoList
+          PhotoList(onDelete: deletePhotoDetail)
         }
         .toolbar {
           ToolbarItemGroup(placement: .bottomBar) {
@@ -42,39 +39,6 @@ struct IndexView: View {
       try? await locationManager.requestUserAuthorization()
       try? await locationManager.startCurrentLocationUpdates()
     }
-  }
-
-  @ViewBuilder private var map: some View {
-    Map(position: $position) {
-      ForEach(photoDetails) { photoDetail in
-        let coord = CLLocationCoordinate2D(
-          latitude: photoDetail.latitude,
-          longitude: photoDetail.longitude
-        )
-        Marker(coordinate: coord) {
-          Text(photoDetail.formattedLabel())
-        }
-      }
-    }
-    .mapControls {
-      MapScaleView()
-      MapCompass()
-      MapUserLocationButton()
-    }
-    .mapStyle(.standard(elevation: .realistic))
-  }
-
-  @ViewBuilder private var photoList: some View {
-    List {
-      ForEach(photoDetails) { photoDetail in
-        NavigationLink(photoDetail.formattedLabel()) {
-          PhotoDetailView(photoDetail: photoDetail)
-        }
-      }
-      .onDelete(perform: deletePhotoDetail)
-    }
-    .scrollContentBackground(.hidden)
-    .accessibilityLabel("Photo detail list")
   }
 
   private func addPhotoDetail() {

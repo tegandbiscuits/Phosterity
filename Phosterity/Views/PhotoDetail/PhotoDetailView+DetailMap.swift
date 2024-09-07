@@ -4,7 +4,7 @@ import SwiftUI
 extension PhotoDetailView {
   struct DetailMap: View {
     private let mapZoom: Double = 500
-    private let mapHeight: CGFloat = 300
+    private let mapHeight: CGFloat = 250
 
     let photoDetail: PhotoDetail
 

@@ -1,4 +1,5 @@
 import BottomSheet
+import Core
 import SwiftData
 import SwiftUI
 
@@ -35,7 +36,7 @@ struct IndexView: View {
         }
         .toolbarBackground(.visible, for: .bottomBar)
     }
-    .task {
+    .task { [locationManager] in
       try? await locationManager.requestUserAuthorization()
       try? await locationManager.startCurrentLocationUpdates()
     }
@@ -43,16 +44,8 @@ struct IndexView: View {
 
   private func addPhotoDetail() {
     withAnimation {
-      if let loc = locationManager.location {
-        let detail = PhotoDetail(
-          time: loc.timestamp,
-          lat: loc.coordinate.latitude,
-          lon: loc.coordinate.longitude
-        )
-        modelContext.insert(detail)
-      } else {
-        print("need to handle no location")
-      }
+      let photoDetail = PhotoDetail.build(location: locationManager.location)
+      modelContext.insert(photoDetail)
     }
   }
 

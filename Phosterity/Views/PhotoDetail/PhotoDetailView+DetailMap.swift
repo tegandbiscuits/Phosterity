@@ -1,3 +1,4 @@
+import Core
 import MapKit
 import SwiftUI
 
@@ -10,11 +11,7 @@ extension PhotoDetailView {
 
     var body: some View {
       Map(bounds: MapCameraBounds(minimumDistance: mapZoom)) {
-        let coord = CLLocationCoordinate2D(
-          latitude: photoDetail.latitude,
-          longitude: photoDetail.longitude
-        )
-        Marker(coordinate: coord) {
+        Marker(coordinate: CLLocationCoordinate2D(photoDetail: photoDetail)) {
           Text(photoDetail.formattedLabel())
         }
       }

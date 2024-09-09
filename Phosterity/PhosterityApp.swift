@@ -1,3 +1,4 @@
+import Core
 import SwiftData
 import SwiftUI
 
@@ -12,17 +13,7 @@ struct PhosterityApp: App {
     }
     #endif
 
-    let schema = Schema([
-      PhotoDetail.self
-    ])
-
-    let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: inMemory)
-
-    do {
-      return try ModelContainer(for: schema, configurations: [modelConfiguration])
-    } catch {
-      fatalError("Could not create ModelContainer: \(error)")
-    }
+    return DataProvider.Init(inMemory: inMemory)
   }()
 
   var body: some Scene {

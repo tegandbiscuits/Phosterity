@@ -1,3 +1,4 @@
+import Core
 import MapKit
 import SwiftData
 import SwiftUI
@@ -11,11 +12,7 @@ extension IndexView {
     var body: some View {
       Map(position: $mapPosition) {
         ForEach(photoDetails) { photoDetail in
-          let coord = CLLocationCoordinate2D(
-            latitude: photoDetail.latitude,
-            longitude: photoDetail.longitude
-          )
-          Marker(coordinate: coord) {
+          Marker(coordinate: CLLocationCoordinate2D(photoDetail: photoDetail)) {
             Text(photoDetail.formattedLabel())
           }
         }

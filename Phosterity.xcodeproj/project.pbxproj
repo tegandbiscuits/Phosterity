@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5B01A99C2C8EBB8F0067773C /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B01A99B2C8EBB8F0067773C /* Core */; };
 		5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12EDBB2C8966B800022E0D /* LocationManager.swift */; };
+		5B52C92B2C8E950D005E7B1A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B52C92A2C8E950D005E7B1A /* WidgetKit.framework */; };
+		5B52C92D2C8E950D005E7B1A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B52C92C2C8E950D005E7B1A /* SwiftUI.framework */; };
+		5B52C93C2C8E950F005E7B1A /* PhosterityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */; };
 		5B97CCB92C8BA0D00067CFFF /* PhotoDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97CCB82C8BA0D00067CFFF /* PhotoDetailTests.swift */; };
 		5B97CCC32C8BD2650067CFFF /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5B97CCC22C8BD2650067CFFF /* BottomSheet */; };
@@ -26,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5B52C93A2C8E950F005E7B1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B52C9282C8E950D005E7B1A;
+			remoteInfo = NotePhotoExtension;
+		};
 		5BFAE95B2C79566D003FE344 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
@@ -42,9 +52,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5B52C9412C8E950F005E7B1A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B52C93C2C8E950F005E7B1A /* PhosterityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5B01A99A2C8EB9FD0067773C /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 		5B12EDBB2C8966B800022E0D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhosterityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B52C92A2C8E950D005E7B1A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5B52C92C2C8E950D005E7B1A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B97CCB82C8BA0D00067CFFF /* PhotoDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailTests.swift; sourceTree = "<group>"; };
@@ -64,7 +91,30 @@
 		5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B52C93D2C8E950F005E7B1A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5B52C9282C8E950D005E7B1A /* PhosterityWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5B52C92E2C8E950D005E7B1A /* PhosterityWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (5B52C93D2C8E950F005E7B1A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PhosterityWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		5B52C9262C8E950D005E7B1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B52C92D2C8E950D005E7B1A /* SwiftUI.framework in Frameworks */,
+				5B52C92B2C8E950D005E7B1A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BFAE9452C79566C003FE344 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */,
+				5B52C92A2C8E950D005E7B1A /* WidgetKit.framework */,
+				5B52C92C2C8E950D005E7B1A /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +188,7 @@
 				5BFAE94A2C79566C003FE344 /* Phosterity */,
 				5BFAE95D2C79566D003FE344 /* PhosterityTests */,
 				5BFAE9672C79566D003FE344 /* PhosterityUITests */,
+				5B52C92E2C8E950D005E7B1A /* PhosterityWidget */,
 				5BFAE9492C79566C003FE344 /* Products */,
 				5B955FCB2C8964C600FC2C8B /* Frameworks */,
 			);
@@ -147,6 +200,7 @@
 				5BFAE9482C79566C003FE344 /* Phosterity.app */,
 				5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */,
 				5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */,
+				5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +246,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B52C9282C8E950D005E7B1A /* PhosterityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B52C93E2C8E950F005E7B1A /* Build configuration list for PBXNativeTarget "PhosterityWidgetExtension" */;
+			buildPhases = (
+				5B52C9252C8E950D005E7B1A /* Sources */,
+				5B52C9262C8E950D005E7B1A /* Frameworks */,
+				5B52C9272C8E950D005E7B1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5B52C92E2C8E950D005E7B1A /* PhosterityWidget */,
+			);
+			name = PhosterityWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = NotePhotoExtension;
+			productReference = 5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5BFAE9472C79566C003FE344 /* Phosterity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BFAE96E2C79566D003FE344 /* Build configuration list for PBXNativeTarget "Phosterity" */;
@@ -199,11 +275,13 @@
 				5BFAE9442C79566C003FE344 /* Sources */,
 				5BFAE9452C79566C003FE344 /* Frameworks */,
 				5BFAE9462C79566C003FE344 /* Resources */,
+				5B52C9412C8E950F005E7B1A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5B9964B52C8A64CE00347354 /* PBXTargetDependency */,
+				5B52C93B2C8E950F005E7B1A /* PBXTargetDependency */,
 			);
 			name = Phosterity;
 			packageProductDependencies = (
@@ -257,9 +335,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					5B52C9282C8E950D005E7B1A = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					5BFAE9472C79566C003FE344 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -293,11 +374,19 @@
 				5BFAE9472C79566C003FE344 /* Phosterity */,
 				5BFAE9592C79566D003FE344 /* PhosterityTests */,
 				5BFAE9632C79566D003FE344 /* PhosterityUITests */,
+				5B52C9282C8E950D005E7B1A /* PhosterityWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B52C9272C8E950D005E7B1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BFAE9462C79566C003FE344 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +413,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B52C9252C8E950D005E7B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BFAE9442C79566C003FE344 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,6 +455,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B52C93B2C8E950F005E7B1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B52C9282C8E950D005E7B1A /* PhosterityWidgetExtension */;
+			targetProxy = 5B52C93A2C8E950F005E7B1A /* PBXContainerItemProxy */;
+		};
 		5B9964B52C8A64CE00347354 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 5B9964B42C8A64CE00347354 /* SwiftLintBuildToolPlugin */;
@@ -376,6 +477,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5B52C93F2C8E950F005E7B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2X7LT3N36;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhosterityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhosterityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.Phosterity.PhosterityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B52C9402C8E950F005E7B1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2X7LT3N36;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhosterityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhosterityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.Phosterity.PhosterityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5BFAE96C2C79566D003FE344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -642,6 +799,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B52C93E2C8E950F005E7B1A /* Build configuration list for PBXNativeTarget "PhosterityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B52C93F2C8E950F005E7B1A /* Debug */,
+				5B52C9402C8E950F005E7B1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BFAE9432C79566C003FE344 /* Build configuration list for PBXProject "Phosterity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

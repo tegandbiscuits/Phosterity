@@ -1,4 +1,6 @@
 import AppIntents
+import Core
+import SwiftData
 import SwiftUI
 import WidgetKit
 
@@ -18,7 +20,13 @@ struct NotePhotoIntent: AppIntent {
   static let title: LocalizedStringResource = "Note Photo"
 
   func perform() async throws -> some IntentResult {
-    print("hello")
+    let modelContext = ModelContext(DataProvider.Init(inMemory: false))
+    modelContext.insert(PhotoDetail.build(location: nil))
+    do {
+      try modelContext.save()
+    } catch {
+      print("Unexpected error occured saving the model context")
+    }
     return .result()
   }
 }

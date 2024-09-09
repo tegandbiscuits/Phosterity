@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B01A99C2C8EBB8F0067773C /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B01A99B2C8EBB8F0067773C /* Core */; };
 		5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12EDBB2C8966B800022E0D /* LocationManager.swift */; };
+		5B161B042C8F8E880015E5AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B161B032C8F8E880015E5AD /* Core */; };
 		5B52C92B2C8E950D005E7B1A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B52C92A2C8E950D005E7B1A /* WidgetKit.framework */; };
 		5B52C92D2C8E950D005E7B1A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B52C92C2C8E950D005E7B1A /* SwiftUI.framework */; };
 		5B52C93C2C8E950F005E7B1A /* PhosterityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -69,6 +70,9 @@
 /* Begin PBXFileReference section */
 		5B01A99A2C8EB9FD0067773C /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 		5B12EDBB2C8966B800022E0D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5B161B052C8F8ED00015E5AD /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
+		5B161B072C8F8F220015E5AD /* Phosterity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phosterity.entitlements; sourceTree = "<group>"; };
+		5B161B082C8F8F310015E5AD /* PhosterityWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhosterityWidgetExtension.entitlements; sourceTree = "<group>"; };
 		5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhosterityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B52C92A2C8E950D005E7B1A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		5B52C92C2C8E950D005E7B1A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,7 @@
 			files = (
 				5B52C92D2C8E950D005E7B1A /* SwiftUI.framework in Frameworks */,
 				5B52C92B2C8E950D005E7B1A /* WidgetKit.framework in Frameworks */,
+				5B161B042C8F8E880015E5AD /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +150,7 @@
 		5B955FCB2C8964C600FC2C8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B161B052C8F8ED00015E5AD /* SwiftData.framework */,
 				5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */,
 				5B52C92A2C8E950D005E7B1A /* WidgetKit.framework */,
 				5B52C92C2C8E950D005E7B1A /* SwiftUI.framework */,
@@ -184,6 +190,7 @@
 		5BFAE93F2C79566C003FE344 = {
 			isa = PBXGroup;
 			children = (
+				5B161B082C8F8F310015E5AD /* PhosterityWidgetExtension.entitlements */,
 				5B01A99A2C8EB9FD0067773C /* Core */,
 				5BFAE94A2C79566C003FE344 /* Phosterity */,
 				5BFAE95D2C79566D003FE344 /* PhosterityTests */,
@@ -208,6 +215,7 @@
 		5BFAE94A2C79566C003FE344 /* Phosterity */ = {
 			isa = PBXGroup;
 			children = (
+				5B161B072C8F8F220015E5AD /* Phosterity.entitlements */,
 				5BFAE9512C79566D003FE344 /* Assets.xcassets */,
 				5B955FCA2C8961C300FC2C8B /* Info.plist */,
 				5B12EDBB2C8966B800022E0D /* LocationManager.swift */,
@@ -263,6 +271,7 @@
 			);
 			name = PhosterityWidgetExtension;
 			packageProductDependencies = (
+				5B161B032C8F8E880015E5AD /* Core */,
 			);
 			productName = NotePhotoExtension;
 			productReference = 5B52C9292C8E950D005E7B1A /* PhosterityWidgetExtension.appex */;
@@ -482,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PhosterityWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M2X7LT3N36;
@@ -510,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PhosterityWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M2X7LT3N36;
@@ -657,6 +668,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Phosterity/Phosterity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Phosterity/Preview Content\"";
@@ -691,6 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Phosterity/Phosterity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Phosterity/Preview Content\"";
@@ -867,6 +880,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		5B01A99B2C8EBB8F0067773C /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		5B161B032C8F8E880015E5AD /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
 		};

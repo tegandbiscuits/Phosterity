@@ -34,6 +34,7 @@ struct IndexView: View {
               .controlSize(.extraLarge)
           }
         }
+        .toolbar(.hidden)
         .toolbarBackground(.visible, for: .bottomBar)
     }
     .task { [locationManager] in

@@ -3,7 +3,7 @@ import Core
 import SwiftData
 import SwiftUI
 
-let kSheetMediumHeight: CGFloat = 375
+let kSheetMediumHeight: CGFloat = 0.5
 
 struct IndexView: View {
   @Environment(\.modelContext)
@@ -13,7 +13,7 @@ struct IndexView: View {
 
   @State private var locationManager = LocationManager()
 
-  @State private var bottomSheetPosition: BottomSheetPosition = .absolute(kSheetMediumHeight)
+  @State private var bottomSheetPosition: BottomSheetPosition = .relative(kSheetMediumHeight)
 
   var body: some View {
     NavigationStack {
@@ -22,7 +22,7 @@ struct IndexView: View {
           bottomSheetPosition: $bottomSheetPosition,
           switchablePositions: [
             .dynamicTop,
-            .absolute(kSheetMediumHeight)
+            .relative(kSheetMediumHeight)
           ]
         ) {
           PhotoList(onDelete: deletePhotoDetail)
@@ -34,11 +34,12 @@ struct IndexView: View {
               .controlSize(.extraLarge)
           }
         }
+        .toolbar(.hidden)
         .toolbarBackground(.visible, for: .bottomBar)
     }
     .task { [locationManager] in
       try? await locationManager.requestUserAuthorization()
-      try? await locationManager.startCurrentLocationUpdates()
+      locationManager.startCurrentLocationUpdates()
     }
   }
 

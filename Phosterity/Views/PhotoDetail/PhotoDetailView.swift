@@ -6,21 +6,24 @@ struct PhotoDetailView: View {
   let photoDetail: PhotoDetail
 
   var body: some View {
-    VStack(spacing: 0) {
-      DetailMap(photoDetail: photoDetail)
+    List {
+      Section {
+        DetailMap(photoDetail: photoDetail)
+      }
+      .listRowInsets(EdgeInsets())
+      .accessibilityLabel(Text("Map"))
 
-      List {
-        Section(header: Text("Location")) {
-          DetailRow(title: "Latitude:", value: String(photoDetail.latitude))
-          DetailRow(title: "Longitude:", value: String(photoDetail.longitude))
-        }
+      Section(header: Text("Location")) {
+        DetailRow(title: "Latitude:", value: String(photoDetail.latitude))
+        DetailRow(title: "Longitude:", value: String(photoDetail.longitude))
+      }
 
-        Section(header: Text("Date Time")) {
-          DetailRow(title: "Date", value: photoDetail.formattedDate())
-          DetailRow(title: "Time", value: photoDetail.formattedTime())
-        }
+      Section(header: Text("Date Time")) {
+        DetailRow(title: "Date", value: photoDetail.formattedDate())
+        DetailRow(title: "Time", value: photoDetail.formattedTime())
       }
     }
+    .navigationTitle(Text(photoDetail.formattedLabel()))
   }
 }
 

@@ -11,6 +11,7 @@ extension IndexView {
 
     var body: some View {
       Map(position: $mapPosition) {
+        UserAnnotation()
         ForEach(photoDetails) { photoDetail in
           Marker(coordinate: CLLocationCoordinate2D(photoDetail: photoDetail)) {
             Text(photoDetail.formattedLabel())

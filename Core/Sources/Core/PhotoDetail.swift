@@ -17,19 +17,14 @@ public final class PhotoDetail {
   }
 
   public static func build(location: CLLocation?) -> PhotoDetail {
-    var date: Date
     if location == nil {
-      let tzOffset = TimeZone.current.secondsFromGMT()
-      let offsetDate = Calendar.current.date(byAdding: .second, value: tzOffset, to: Date())
-      date = offsetDate ?? Date()
-    } else {
-      date = Date()
+      return PhotoDetail(time: Date(), lat: 0, lon: 0)
     }
 
     return PhotoDetail(
-      time: date,
-      lat: location?.coordinate.latitude ?? 0,
-      lon: location?.coordinate.longitude ?? 0
+      time: location!.timestamp,
+      lat: location!.coordinate.latitude,
+      lon: location!.coordinate.longitude
     )
   }
 

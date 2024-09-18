@@ -1,5 +1,6 @@
 import XCTest
 
+@MainActor
 final class PhosterityUITests: XCTestCase {
   // Test will fail if location services aren't granted.
   // Need to handle that (both in the tests and in the app)

@@ -1,5 +1,6 @@
 import XCTest
 
+@MainActor
 final class PhosterityUITestsLaunchTests: XCTestCase {
   override class var runsForEachTargetApplicationUIConfiguration: Bool {
     true

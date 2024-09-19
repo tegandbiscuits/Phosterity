@@ -15,6 +15,7 @@ extension IndexView {
         }
         .onDelete(perform: onDelete)
       }
+      .listStyle(.insetGrouped)
       .scrollContentBackground(.hidden)
       .accessibilityLabel("Photo detail list")
     }

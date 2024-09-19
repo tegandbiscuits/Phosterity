@@ -16,27 +16,34 @@ struct IndexView: View {
   @State private var bottomSheetPosition: BottomSheetPosition = .relative(kSheetMediumHeight)
 
   var body: some View {
-    NavigationStack {
-      PhotoMap()
-        .bottomSheet(
-          bottomSheetPosition: $bottomSheetPosition,
-          switchablePositions: [
-            .dynamicTop,
-            .relative(kSheetMediumHeight)
-          ]
-        ) {
-          PhotoList(onDelete: deletePhotoDetail)
-        }
-        .toolbar {
-          ToolbarItemGroup(placement: .bottomBar) {
-            Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
-              .buttonStyle(.borderedProminent)
-              .controlSize(.extraLarge)
+    NavigationSplitView(
+      columnVisibility: .constant(.all),
+      sidebar: {
+        PhotoMap()
+          .bottomSheet(
+            bottomSheetPosition: $bottomSheetPosition,
+            switchablePositions: [
+              .dynamicTop,
+              .relative(kSheetMediumHeight)
+            ]
+          ) {
+            PhotoList(onDelete: deletePhotoDetail)
           }
-        }
-        .toolbar(.hidden)
-        .toolbarBackground(.visible, for: .bottomBar)
-    }
+          .toolbar {
+            ToolbarItemGroup(placement: .bottomBar) {
+              Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+            }
+          }
+          .toolbar(.hidden)
+          .toolbarBackground(.visible, for: .bottomBar)
+      },
+      detail: {
+        Text("No photo selected")
+      }
+    )
+    .navigationSplitViewStyle(.balanced)
     .task { [locationManager] in
       try? await locationManager.requestUserAuthorization()
       locationManager.startCurrentLocationUpdates()

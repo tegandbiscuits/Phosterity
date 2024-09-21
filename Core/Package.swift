@@ -12,14 +12,20 @@ let package = Package(
             name: "Core",
             targets: ["Core"]),
     ],
+    dependencies: [
+      .package(url: "https://github.com/SimplyDanny/SwiftLintPlugins", exact: "0.57.0")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Core"),
+            name: "Core",
+            plugins: [.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")]
+        ),
         .testTarget(
             name: "CoreTests",
-            dependencies: ["Core"]
+            dependencies: ["Core"],
+            plugins: [.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")]
         ),
     ]
 )

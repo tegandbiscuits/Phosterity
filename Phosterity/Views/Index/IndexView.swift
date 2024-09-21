@@ -24,7 +24,7 @@ struct IndexView: View {
             bottomSheetPosition: $bottomSheetPosition,
             switchablePositions: [
               .dynamicTop,
-              .relative(kSheetMediumHeight)
+              .relative(kSheetMediumHeight),
             ]
           ) {
             PhotoList(onDelete: deletePhotoDetail)

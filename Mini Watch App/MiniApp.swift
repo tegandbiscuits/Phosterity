@@ -1,9 +1,9 @@
-import SwiftUI
-import SwiftData
 import Core
+import SwiftData
+import SwiftUI
 
 @main
-struct Mini_Watch_AppApp: App {
+struct MiniApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationStack {
@@ -17,6 +17,6 @@ struct Mini_Watch_AppApp: App {
         }
       }
     }
-    .modelContainer(DataProvider.Init(inMemory: false))
+    .modelContainer(DataProvider.setup(inMemory: false))
   }
 }

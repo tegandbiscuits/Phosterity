@@ -1,7 +1,7 @@
 import SwiftData
 
 public struct DataProvider {
-  public static func Init(inMemory: Bool) -> ModelContainer {
+  public static func setup(inMemory: Bool) -> ModelContainer {
     let schema = Schema([
       PhotoDetail.self
     ])

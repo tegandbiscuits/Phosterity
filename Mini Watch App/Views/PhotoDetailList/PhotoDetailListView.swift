@@ -1,6 +1,6 @@
 import Core
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct PhotoDetailListView: View {
   @Environment(\.modelContext)
@@ -18,7 +18,6 @@ struct PhotoDetailListView: View {
       .onDelete(perform: onDelete)
     }
   }
-
 
   private func onDelete(offsets: IndexSet) {
     for index in offsets {

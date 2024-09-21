@@ -27,7 +27,3 @@ extension IndexView {
     }
   }
 }
-
-//#Preview {
-//  IndexView.PhotoMap()
-//}

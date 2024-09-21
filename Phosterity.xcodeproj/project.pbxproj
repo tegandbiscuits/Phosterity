@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5B01A99C2C8EBB8F0067773C /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B01A99B2C8EBB8F0067773C /* Core */; };
-		5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12EDBB2C8966B800022E0D /* LocationManager.swift */; };
 		5B6817B92C9CA2830033E875 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B6817B82C9CA2830033E875 /* Core */; };
 		5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */; };
 		5B97CCC32C8BD2650067CFFF /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5B97CCC22C8BD2650067CFFF /* BottomSheet */; };
@@ -80,7 +79,6 @@
 
 /* Begin PBXFileReference section */
 		5B01A99A2C8EB9FD0067773C /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
-		5B12EDBB2C8966B800022E0D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B97CCC62C8BDD5E0067CFFF /* IndexView+PhotoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexView+PhotoMap.swift"; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 			children = (
 				5BFAE9512C79566D003FE344 /* Assets.xcassets */,
 				5B955FCA2C8961C300FC2C8B /* Info.plist */,
-				5B12EDBB2C8966B800022E0D /* LocationManager.swift */,
 				5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */,
 				5BFAE9532C79566D003FE344 /* Preview Content */,
 				5B9964B22C8A518600347354 /* Views */,
@@ -274,6 +271,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5BE429EF2C9E596E0001AA29 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5BB86C2D2C9B926400D81390 /* Mini Watch App */,
@@ -297,6 +295,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B762BD72C9E5E180004E86C /* PBXTargetDependency */,
 				5BB86C3D2C9B926600D81390 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
@@ -320,6 +319,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B762BD92C9E5E1C0004E86C /* PBXTargetDependency */,
 				5BB86C472C9B926600D81390 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
@@ -367,6 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B762BD52C9E5E110004E86C /* PBXTargetDependency */,
 				5BFAE95C2C79566D003FE344 /* PBXTargetDependency */,
 			);
 			name = PhosterityTests;
@@ -385,6 +386,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B762BD32C9E5E0D0004E86C /* PBXTargetDependency */,
 				5BFAE9662C79566D003FE344 /* PBXTargetDependency */,
 			);
 			name = PhosterityUITests;
@@ -528,7 +530,6 @@
 			files = (
 				5B97CCCB2C8BFDF90067CFFF /* PhotoDetailView+DetailMap.swift in Sources */,
 				5B97CCC92C8BDEF60067CFFF /* IndexView+PhotoList.swift in Sources */,
-				5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */,
 				5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */,
 				5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */,
 				5B97CCC72C8BDD5E0067CFFF /* IndexView+PhotoMap.swift in Sources */,
@@ -556,6 +557,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B762BD32C9E5E0D0004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B762BD22C9E5E0D0004E86C /* SwiftLintBuildToolPlugin */;
+		};
+		5B762BD52C9E5E110004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B762BD42C9E5E110004E86C /* SwiftLintBuildToolPlugin */;
+		};
+		5B762BD72C9E5E180004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B762BD62C9E5E180004E86C /* SwiftLintBuildToolPlugin */;
+		};
+		5B762BD92C9E5E1C0004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B762BD82C9E5E1C0004E86C /* SwiftLintBuildToolPlugin */;
+		};
 		5B9964B52C8A64CE00347354 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 5B9964B42C8A64CE00347354 /* SwiftLintBuildToolPlugin */;
@@ -574,6 +591,10 @@
 			isa = PBXTargetDependency;
 			target = 5BB86C2B2C9B926400D81390 /* Mini Watch App */;
 			targetProxy = 5BB86C4D2C9B926600D81390 /* PBXContainerItemProxy */;
+		};
+		5BE429EF2C9E596E0001AA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5BE429EE2C9E596E0001AA29 /* SwiftLintBuildToolPlugin */;
 		};
 		5BFAE95C2C79566D003FE344 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1081,12 +1102,37 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
 		};
+		5B762BD22C9E5E0D0004E86C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5B762BD42C9E5E110004E86C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5B762BD62C9E5E180004E86C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5B762BD82C9E5E1C0004E86C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
 		5B97CCC22C8BD2650067CFFF /* BottomSheet */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B97CCC12C8BD2230067CFFF /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
 		};
 		5B9964B42C8A64CE00347354 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5BE429EE2C9E596E0001AA29 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";

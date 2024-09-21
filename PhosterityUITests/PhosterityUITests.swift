@@ -2,8 +2,6 @@ import XCTest
 
 @MainActor
 final class PhosterityUITests: XCTestCase {
-  // Test will fail if location services aren't granted.
-  // Need to handle that (both in the tests and in the app)
   func testCanAddPhotoDetails() throws {
     let app = XCUIApplication()
     app.launchArguments = ["enable-testing"]
@@ -17,6 +15,10 @@ final class PhosterityUITests: XCTestCase {
     let newDetailLabel = photoDetailList.cells.staticTexts.firstMatch.label
     let labelPattern = try Regex("^\\d+/\\d+/\\d+ \\d+:\\d+:\\d+ AM|PM")
     XCTAssertNotNil(newDetailLabel.firstMatch(of: labelPattern))
+
+    XCTAssertFalse(app.navigationBars[newDetailLabel].exists)
+    app.buttons[newDetailLabel].tap()
+    XCTAssertTrue(app.navigationBars[newDetailLabel].exists)
   }
 
   func testLaunchPerformance() throws {

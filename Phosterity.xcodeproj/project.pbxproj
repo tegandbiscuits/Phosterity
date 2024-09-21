@@ -25,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5B762BE22C9E66750004E86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BFAE9472C79566C003FE344;
+			remoteInfo = Phosterity;
+		};
 		5BB86C3C2C9B926600D81390 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
@@ -45,13 +52,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5BB86C2B2C9B926400D81390;
 			remoteInfo = "Mini Watch App";
-		};
-		5BFAE95B2C79566D003FE344 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BFAE9472C79566C003FE344;
-			remoteInfo = Phosterity;
 		};
 		5BFAE9652C79566D003FE344 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		5B01A99A2C8EB9FD0067773C /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
+		5B762BDE2C9E66750004E86C /* PhosterityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B97CCC62C8BDD5E0067CFFF /* IndexView+PhotoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexView+PhotoMap.swift"; sourceTree = "<group>"; };
@@ -88,23 +89,31 @@
 		5BB86C2C2C9B926400D81390 /* Mini Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB86C3B2C9B926600D81390 /* Mini Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB86C452C9B926600D81390 /* Mini Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD7652F2C9E6D6000C2DC45 /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 		5BFAE9482C79566C003FE344 /* Phosterity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phosterity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityApp.swift; sourceTree = "<group>"; };
 		5BFAE94D2C79566C003FE344 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		5BFAE9512C79566D003FE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		5B762BDF2C9E66750004E86C /* PhosterityTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhosterityTests; sourceTree = "<group>"; };
 		5BB86C2D2C9B926400D81390 /* Mini Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch App"; sourceTree = "<group>"; };
 		5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppTests"; sourceTree = "<group>"; };
 		5BB86C482C9B926600D81390 /* Mini Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B762BDB2C9E66750004E86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BB86C292C9B926400D81390 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,13 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BFAE9572C79566D003FE344 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BFAE9612C79566D003FE344 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +159,7 @@
 		5B955FCB2C8964C600FC2C8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BD7652F2C9E6D6000C2DC45 /* Testing.framework */,
 				5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */,
 			);
 			name = Frameworks;
@@ -200,6 +203,7 @@
 				5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */,
 				5BB86C482C9B926600D81390 /* Mini Watch AppUITests */,
 				5BFAE94A2C79566C003FE344 /* Phosterity */,
+				5B762BDF2C9E66750004E86C /* PhosterityTests */,
 				5BFAE95D2C79566D003FE344 /* PhosterityTests */,
 				5BFAE9672C79566D003FE344 /* PhosterityUITests */,
 				5BFAE9492C79566C003FE344 /* Products */,
@@ -210,11 +214,11 @@
 			isa = PBXGroup;
 			children = (
 				5BFAE9482C79566C003FE344 /* Phosterity.app */,
-				5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */,
 				5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */,
 				5BB86C2C2C9B926400D81390 /* Mini Watch App.app */,
 				5BB86C3B2C9B926600D81390 /* Mini Watch AppTests.xctest */,
 				5BB86C452C9B926600D81390 /* Mini Watch AppUITests.xctest */,
+				5B762BDE2C9E66750004E86C /* PhosterityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +261,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B762BDD2C9E66750004E86C /* PhosterityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B762BE42C9E66750004E86C /* Build configuration list for PBXNativeTarget "PhosterityTests" */;
+			buildPhases = (
+				5B762BDA2C9E66750004E86C /* Sources */,
+				5B762BDB2C9E66750004E86C /* Frameworks */,
+				5B762BDC2C9E66750004E86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B762BE32C9E66750004E86C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5B762BDF2C9E66750004E86C /* PhosterityTests */,
+			);
+			name = PhosterityTests;
+			packageProductDependencies = (
+			);
+			productName = PhosterityTests;
+			productReference = 5B762BDE2C9E66750004E86C /* PhosterityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5BB86C2B2C9B926400D81390 /* Mini Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB86C572C9B926600D81390 /* Build configuration list for PBXNativeTarget "Mini Watch App" */;
@@ -353,25 +380,6 @@
 			productReference = 5BFAE9482C79566C003FE344 /* Phosterity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BFAE9592C79566D003FE344 /* PhosterityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BFAE9712C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityTests" */;
-			buildPhases = (
-				5BFAE9562C79566D003FE344 /* Sources */,
-				5BFAE9572C79566D003FE344 /* Frameworks */,
-				5BFAE9582C79566D003FE344 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B762BD52C9E5E110004E86C /* PBXTargetDependency */,
-				5BFAE95C2C79566D003FE344 /* PBXTargetDependency */,
-			);
-			name = PhosterityTests;
-			productName = PhosterityTests;
-			productReference = 5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5BFAE9632C79566D003FE344 /* PhosterityUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BFAE9742C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityUITests" */;
@@ -401,6 +409,10 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					5B762BDD2C9E66750004E86C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5BFAE9472C79566C003FE344;
+					};
 					5BB86C2B2C9B926400D81390 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -414,10 +426,6 @@
 					};
 					5BFAE9472C79566C003FE344 = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					5BFAE9592C79566D003FE344 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 5BFAE9472C79566C003FE344;
 					};
 					5BFAE9632C79566D003FE344 = {
 						CreatedOnToolsVersion = 15.4;
@@ -443,7 +451,7 @@
 			projectRoot = "";
 			targets = (
 				5BFAE9472C79566C003FE344 /* Phosterity */,
-				5BFAE9592C79566D003FE344 /* PhosterityTests */,
+				5B762BDD2C9E66750004E86C /* PhosterityTests */,
 				5BFAE9632C79566D003FE344 /* PhosterityUITests */,
 				5BB86C2B2C9B926400D81390 /* Mini Watch App */,
 				5BB86C3A2C9B926600D81390 /* Mini Watch AppTests */,
@@ -453,6 +461,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B762BDC2C9E66750004E86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BB86C2A2C9B926400D81390 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,13 +498,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BFAE9582C79566D003FE344 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BFAE9622C79566D003FE344 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,6 +508,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B762BDA2C9E66750004E86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BB86C282C9B926400D81390 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,13 +550,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BFAE9562C79566D003FE344 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BFAE9602C79566D003FE344 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,10 +565,6 @@
 			isa = PBXTargetDependency;
 			productRef = 5B762BD22C9E5E0D0004E86C /* SwiftLintBuildToolPlugin */;
 		};
-		5B762BD52C9E5E110004E86C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 5B762BD42C9E5E110004E86C /* SwiftLintBuildToolPlugin */;
-		};
 		5B762BD72C9E5E180004E86C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 5B762BD62C9E5E180004E86C /* SwiftLintBuildToolPlugin */;
@@ -568,6 +572,11 @@
 		5B762BD92C9E5E1C0004E86C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 5B762BD82C9E5E1C0004E86C /* SwiftLintBuildToolPlugin */;
+		};
+		5B762BE32C9E66750004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BFAE9472C79566C003FE344 /* Phosterity */;
+			targetProxy = 5B762BE22C9E66750004E86C /* PBXContainerItemProxy */;
 		};
 		5B9964B52C8A64CE00347354 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -592,11 +601,6 @@
 			isa = PBXTargetDependency;
 			productRef = 5BE429EE2C9E596E0001AA29 /* SwiftLintBuildToolPlugin */;
 		};
-		5BFAE95C2C79566D003FE344 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BFAE9472C79566C003FE344 /* Phosterity */;
-			targetProxy = 5BFAE95B2C79566D003FE344 /* PBXContainerItemProxy */;
-		};
 		5BFAE9662C79566D003FE344 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BFAE9472C79566C003FE344 /* Phosterity */;
@@ -605,6 +609,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5B762BE52C9E66750004E86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2X7LT3N36;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.PhosterityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phosterity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phosterity";
+			};
+			name = Debug;
+		};
+		5B762BE62C9E66750004E86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2X7LT3N36;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.PhosterityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phosterity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phosterity";
+			};
+			name = Release;
+		};
 		5BB86C512C9B926600D81390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -930,44 +972,6 @@
 			};
 			name = Release;
 		};
-		5BFAE9722C79566D003FE344 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2X7LT3N36;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.PhosterityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phosterity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phosterity";
-			};
-			name = Debug;
-		};
-		5BFAE9732C79566D003FE344 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2X7LT3N36;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.PhosterityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phosterity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phosterity";
-			};
-			name = Release;
-		};
 		5BFAE9752C79566D003FE344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1005,6 +1009,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B762BE42C9E66750004E86C /* Build configuration list for PBXNativeTarget "PhosterityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B762BE52C9E66750004E86C /* Debug */,
+				5B762BE62C9E66750004E86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BB86C572C9B926600D81390 /* Build configuration list for PBXNativeTarget "Mini Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1050,15 +1063,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BFAE9712C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BFAE9722C79566D003FE344 /* Debug */,
-				5BFAE9732C79566D003FE344 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5BFAE9742C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1099,11 +1103,6 @@
 			productName = Core;
 		};
 		5B762BD22C9E5E0D0004E86C /* SwiftLintBuildToolPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
-			productName = "plugin:SwiftLintBuildToolPlugin";
-		};
-		5B762BD42C9E5E110004E86C /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";

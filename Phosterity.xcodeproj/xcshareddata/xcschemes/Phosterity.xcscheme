@@ -35,7 +35,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5BFAE9592C79566D003FE344"
+               BlueprintIdentifier = "5B762BDD2C9E66750004E86C"
                BuildableName = "PhosterityTests.xctest"
                BlueprintName = "PhosterityTests"
                ReferencedContainer = "container:Phosterity.xcodeproj">

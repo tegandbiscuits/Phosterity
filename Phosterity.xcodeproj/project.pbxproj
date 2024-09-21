@@ -22,7 +22,6 @@
 		5BFAE9522C79566D003FE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9512C79566D003FE344 /* Assets.xcassets */; };
 		5BFAE9552C79566D003FE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */; };
 		5BFAE9692C79566D003FE344 /* PhosterityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */; };
-		5BFAE96B2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +96,6 @@
 		5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITests.swift; sourceTree = "<group>"; };
-		5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -252,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */,
-				5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */,
 			);
 			path = PhosterityUITests;
 			sourceTree = "<group>";
@@ -550,7 +547,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BFAE9692C79566D003FE344 /* PhosterityUITests.swift in Sources */,
-				5BFAE96B2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

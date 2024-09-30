@@ -8,10 +8,11 @@ extension PhotoDetailView {
 
     var body: some View {
       HStack {
-        Text(title).foregroundStyle(.secondary)
+        Text("\(title):").foregroundStyle(.secondary)
         Spacer()
         Text(value)
       }
+      .accessibilityLabel("\(title): \(value)")
       .contextMenu {
         Button("Copy Value", action: copy)
       }

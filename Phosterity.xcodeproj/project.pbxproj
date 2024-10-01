@@ -19,7 +19,6 @@
 		5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9964AF2C8A459000347354 /* PhotoDetailView.swift */; };
 		5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */; };
 		5BB86C4F2C9B926600D81390 /* Mini Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5BB86C2C2C9B926400D81390 /* Mini Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5BD765352C9E6DE600C2DC45 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 5BD765342C9E6DE600C2DC45 /* ViewInspector */; };
 		5BFAE94C2C79566C003FE344 /* PhosterityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */; };
 		5BFAE94E2C79566C003FE344 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* IndexView.swift */; };
 		5BFAE9522C79566D003FE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9512C79566D003FE344 /* Assets.xcassets */; };
@@ -105,7 +104,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5B762BDF2C9E66750004E86C /* PhosterityTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhosterityTests; sourceTree = "<group>"; };
 		5BB86C2D2C9B926400D81390 /* Mini Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch App"; sourceTree = "<group>"; };
 		5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppTests"; sourceTree = "<group>"; };
 		5BB86C482C9B926600D81390 /* Mini Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppUITests"; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD765352C9E6DE600C2DC45 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,8 +206,6 @@
 				5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */,
 				5BB86C482C9B926600D81390 /* Mini Watch AppUITests */,
 				5BFAE94A2C79566C003FE344 /* Phosterity */,
-				5B762BDF2C9E66750004E86C /* PhosterityTests */,
-				5BFAE95D2C79566D003FE344 /* PhosterityTests */,
 				5BFAE9672C79566D003FE344 /* PhosterityUITests */,
 				5BFAE9492C79566C003FE344 /* Products */,
 			);
@@ -249,13 +244,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5BFAE95D2C79566D003FE344 /* PhosterityTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhosterityTests;
-			sourceTree = "<group>";
-		};
 		5BFAE9672C79566D003FE344 /* PhosterityUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,12 +270,8 @@
 			dependencies = (
 				5B762BE32C9E66750004E86C /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				5B762BDF2C9E66750004E86C /* PhosterityTests */,
-			);
 			name = PhosterityTests;
 			packageProductDependencies = (
-				5BD765342C9E6DE600C2DC45 /* ViewInspector */,
 			);
 			productName = PhosterityTests;
 			productReference = 5B762BDE2C9E66750004E86C /* PhosterityTests.xctest */;
@@ -454,7 +438,6 @@
 			packageReferences = (
 				5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 				5B97CCC12C8BD2230067CFFF /* XCRemoteSwiftPackageReference "BottomSheet" */,
-				5BD765332C9E6DE600C2DC45 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 5BFAE9492C79566C003FE344 /* Products */;
 			projectDirPath = "";
@@ -1103,14 +1086,6 @@
 				minimumVersion = 0.56.2;
 			};
 		};
-		5BD765332C9E6DE600C2DC45 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nalexn/ViewInspector";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.10.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1146,11 +1121,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
-		};
-		5BD765342C9E6DE600C2DC45 /* ViewInspector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5BD765332C9E6DE600C2DC45 /* XCRemoteSwiftPackageReference "ViewInspector" */;
-			productName = ViewInspector;
 		};
 		5BE429EE2C9E596E0001AA29 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;

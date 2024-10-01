@@ -23,7 +23,6 @@
 		5BFAE94E2C79566C003FE344 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* IndexView.swift */; };
 		5BFAE9522C79566D003FE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9512C79566D003FE344 /* Assets.xcassets */; };
 		5BFAE9552C79566D003FE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */; };
-		5BFAE9692C79566D003FE344 /* PhosterityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +83,6 @@
 		5BFAE9512C79566D003FE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -215,7 +213,6 @@
 			children = (
 				5B5B058A2CAC837E0088DBC1 /* PhotoDetailUITests.swift */,
 				5B5B05882CAB45890088DBC1 /* PhotoDetailListUITests.swift */,
-				5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */,
 			);
 			path = PhosterityUITests;
 			sourceTree = "<group>";
@@ -432,7 +429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5B05892CAB45940088DBC1 /* PhotoDetailListUITests.swift in Sources */,
-				5BFAE9692C79566D003FE344 /* PhosterityUITests.swift in Sources */,
 				5B5B058B2CAC83850088DBC1 /* PhotoDetailUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

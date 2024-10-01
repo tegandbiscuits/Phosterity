@@ -7,17 +7,25 @@ extension IndexView {
     @Query private var photoDetails: [PhotoDetail]
 
     var body: some View {
-      List {
-        ForEach(photoDetails) { photoDetail in
-          NavigationLink(photoDetail.formattedLabel()) {
-            PhotoDetailView(photoDetail: photoDetail)
-          }
+      if photoDetails.isEmpty {
+        VStack {
+          Spacer()
+          Text("No Photo Details...").foregroundStyle(.secondary)
+          Spacer()
         }
-        .onDelete(perform: onDelete)
+      } else {
+        List {
+          ForEach(photoDetails) { photoDetail in
+            NavigationLink(photoDetail.formattedLabel()) {
+              PhotoDetailView(photoDetail: photoDetail)
+            }
+          }
+          .onDelete(perform: onDelete)
+        }
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .accessibilityLabel("Photo detail list")
       }
-      .listStyle(.insetGrouped)
-      .scrollContentBackground(.hidden)
-      .accessibilityLabel("Photo detail list")
     }
 
     var onDelete: (IndexSet) -> Void

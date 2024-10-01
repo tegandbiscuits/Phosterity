@@ -12,6 +12,7 @@ extension PhotoDetailView {
         Spacer()
         Text(value)
       }
+      .accessibilityElement(children: .ignore)
       .accessibilityLabel("\(title): \(value)")
       .contextMenu {
         Button("Copy Value", action: copy)

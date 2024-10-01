@@ -105,7 +105,6 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5BB86C2D2C9B926400D81390 /* Mini Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch App"; sourceTree = "<group>"; };
-		5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppTests"; sourceTree = "<group>"; };
 		5BB86C482C9B926600D81390 /* Mini Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -203,7 +202,6 @@
 				5B01A99A2C8EB9FD0067773C /* Core */,
 				5B955FCB2C8964C600FC2C8B /* Frameworks */,
 				5BB86C2D2C9B926400D81390 /* Mini Watch App */,
-				5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */,
 				5BB86C482C9B926600D81390 /* Mini Watch AppUITests */,
 				5BFAE94A2C79566C003FE344 /* Phosterity */,
 				5BFAE9672C79566D003FE344 /* PhosterityUITests */,
@@ -314,9 +312,6 @@
 			dependencies = (
 				5B762BD72C9E5E180004E86C /* PBXTargetDependency */,
 				5BB86C3D2C9B926600D81390 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */,
 			);
 			name = "Mini Watch AppTests";
 			packageProductDependencies = (

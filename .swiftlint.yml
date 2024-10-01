@@ -4,7 +4,6 @@ opt_in_rules:
   - anonymous_argument_in_multiline_closure
   - array_init
   - attributes
-  - balanced_xctest_lifecycle
   - closure_body_length
   - closure_end_indentation
   - closure_spacing
@@ -46,7 +45,6 @@ opt_in_rules:
   - ibinspectable_in_extension
   - identical_operands
   - implicit_return
-  - implicitly_unwrapped_optional
   - indentation_width
   - joined_default_parameter
   - last_where

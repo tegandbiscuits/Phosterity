@@ -13,7 +13,7 @@ struct PhosterityApp: App {
     }
     #endif
 
-    return DataProvider.Init(inMemory: inMemory)
+    return DataProvider.setup(inMemory: inMemory)
   }()
 
   var body: some Scene {

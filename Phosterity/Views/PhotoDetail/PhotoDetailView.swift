@@ -14,11 +14,11 @@ struct PhotoDetailView: View {
       .accessibilityLabel(Text("Map"))
 
       Section(header: Text("Location")) {
-        DetailRow(title: "Latitude:", value: String(photoDetail.latitude))
-        DetailRow(title: "Longitude:", value: String(photoDetail.longitude))
+        DetailRow(title: "Latitude", value: String(photoDetail.latitude))
+        DetailRow(title: "Longitude", value: String(photoDetail.longitude))
       }
 
-      Section(header: Text("Date Time")) {
+      Section(header: Text("Date & Time")) {
         DetailRow(title: "Date", value: photoDetail.formattedDate())
         DetailRow(title: "Time", value: photoDetail.formattedTime())
       }

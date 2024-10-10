@@ -1,6 +1,6 @@
 import Core
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct PhotoDetailListView: View {
   @Environment(\.modelContext)
@@ -9,16 +9,24 @@ struct PhotoDetailListView: View {
   @Query private var photoDetails: [PhotoDetail]
 
   var body: some View {
-    List {
-      ForEach(photoDetails) { photoDetail in
-        NavigationLink(photoDetail.formattedLabel()) {
-          PhotoDetailView(photoDetail: photoDetail)
-        }
+    if photoDetails.isEmpty {
+      VStack {
+        Spacer()
+        Text("No Photo Details...").foregroundStyle(.secondary)
+        Spacer()
       }
-      .onDelete(perform: onDelete)
+    } else {
+      List {
+        ForEach(photoDetails) { photoDetail in
+          NavigationLink(photoDetail.formattedLabel()) {
+            PhotoDetailView(photoDetail: photoDetail)
+          }
+        }
+        .onDelete(perform: onDelete)
+      }
+      .accessibilityLabel("Photo detail list")
     }
   }
-
 
   private func onDelete(offsets: IndexSet) {
     for index in offsets {

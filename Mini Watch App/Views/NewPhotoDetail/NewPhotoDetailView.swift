@@ -8,7 +8,7 @@ struct NewPhotoDetailView: View {
   @State private var locationManager = LocationManager()
 
   var body: some View {
-    Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
+    Button("Save Photo Details", systemImage: "camera", action: addPhotoDetail)
       .buttonStyle(.borderedProminent)
       .controlSize(.large)
       .task { [locationManager] in

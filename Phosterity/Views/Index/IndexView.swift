@@ -24,14 +24,14 @@ struct IndexView: View {
             bottomSheetPosition: $bottomSheetPosition,
             switchablePositions: [
               .dynamicTop,
-              .relative(kSheetMediumHeight)
+              .relative(kSheetMediumHeight),
             ]
           ) {
             PhotoList(onDelete: deletePhotoDetail)
           }
           .toolbar {
             ToolbarItemGroup(placement: .bottomBar) {
-              Button("Save Photo Data", systemImage: "camera", action: addPhotoDetail)
+              Button("Save Photo Details", systemImage: "camera", action: addPhotoDetail)
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
             }

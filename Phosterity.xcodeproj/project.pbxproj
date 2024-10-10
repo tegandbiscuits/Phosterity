@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5B01A99C2C8EBB8F0067773C /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B01A99B2C8EBB8F0067773C /* Core */; };
-		5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12EDBB2C8966B800022E0D /* LocationManager.swift */; };
+		5B5B05892CAB45940088DBC1 /* PhotoDetailListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B05882CAB45890088DBC1 /* PhotoDetailListUITests.swift */; };
+		5B5B058B2CAC83850088DBC1 /* PhotoDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B058A2CAC837E0088DBC1 /* PhotoDetailUITests.swift */; };
 		5B6817B92C9CA2830033E875 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 5B6817B82C9CA2830033E875 /* Core */; };
 		5B955FCD2C8964C600FC2C8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */; };
 		5B97CCC32C8BD2650067CFFF /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5B97CCC22C8BD2650067CFFF /* BottomSheet */; };
@@ -22,18 +23,9 @@
 		5BFAE94E2C79566C003FE344 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE94D2C79566C003FE344 /* IndexView.swift */; };
 		5BFAE9522C79566D003FE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9512C79566D003FE344 /* Assets.xcassets */; };
 		5BFAE9552C79566D003FE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */; };
-		5BFAE9692C79566D003FE344 /* PhosterityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */; };
-		5BFAE96B2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5BB86C3C2C9B926600D81390 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BB86C2B2C9B926400D81390;
-			remoteInfo = "Mini Watch App";
-		};
 		5BB86C462C9B926600D81390 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
@@ -47,13 +39,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5BB86C2B2C9B926400D81390;
 			remoteInfo = "Mini Watch App";
-		};
-		5BFAE95B2C79566D003FE344 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BFAE9402C79566C003FE344 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BFAE9472C79566C003FE344;
-			remoteInfo = Phosterity;
 		};
 		5BFAE9652C79566D003FE344 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -80,7 +65,8 @@
 
 /* Begin PBXFileReference section */
 		5B01A99A2C8EB9FD0067773C /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
-		5B12EDBB2C8966B800022E0D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5B5B05882CAB45890088DBC1 /* PhotoDetailListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailListUITests.swift; sourceTree = "<group>"; };
+		5B5B058A2CAC837E0088DBC1 /* PhotoDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailUITests.swift; sourceTree = "<group>"; };
 		5B955FCA2C8961C300FC2C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B97CCC62C8BDD5E0067CFFF /* IndexView+PhotoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexView+PhotoMap.swift"; sourceTree = "<group>"; };
@@ -89,22 +75,18 @@
 		5B9964AF2C8A459000347354 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		5B9964B72C8A6E4600347354 /* PhotoDetailView+DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDetailView+DetailRow.swift"; sourceTree = "<group>"; };
 		5BB86C2C2C9B926400D81390 /* Mini Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BB86C3B2C9B926600D81390 /* Mini Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB86C452C9B926600D81390 /* Mini Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD7652F2C9E6D6000C2DC45 /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 		5BFAE9482C79566C003FE344 /* Phosterity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phosterity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityApp.swift; sourceTree = "<group>"; };
 		5BFAE94D2C79566C003FE344 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		5BFAE9512C79566D003FE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BFAE9542C79566D003FE344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhosterityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITests.swift; sourceTree = "<group>"; };
-		5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhosterityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5BB86C2D2C9B926400D81390 /* Mini Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch App"; sourceTree = "<group>"; };
-		5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppTests"; sourceTree = "<group>"; };
 		5BB86C482C9B926600D81390 /* Mini Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mini Watch AppUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -114,13 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6817B92C9CA2830033E875 /* Core in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BB86C382C9B926600D81390 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,13 +116,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BFAE9572C79566D003FE344 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BFAE9612C79566D003FE344 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +129,7 @@
 		5B955FCB2C8964C600FC2C8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BD7652F2C9E6D6000C2DC45 /* Testing.framework */,
 				5B955FCC2C8964C600FC2C8B /* CoreLocation.framework */,
 			);
 			name = Frameworks;
@@ -201,10 +170,8 @@
 				5B01A99A2C8EB9FD0067773C /* Core */,
 				5B955FCB2C8964C600FC2C8B /* Frameworks */,
 				5BB86C2D2C9B926400D81390 /* Mini Watch App */,
-				5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */,
 				5BB86C482C9B926600D81390 /* Mini Watch AppUITests */,
 				5BFAE94A2C79566C003FE344 /* Phosterity */,
-				5BFAE95D2C79566D003FE344 /* PhosterityTests */,
 				5BFAE9672C79566D003FE344 /* PhosterityUITests */,
 				5BFAE9492C79566C003FE344 /* Products */,
 			);
@@ -214,10 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				5BFAE9482C79566C003FE344 /* Phosterity.app */,
-				5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */,
 				5BFAE9642C79566D003FE344 /* PhosterityUITests.xctest */,
 				5BB86C2C2C9B926400D81390 /* Mini Watch App.app */,
-				5BB86C3B2C9B926600D81390 /* Mini Watch AppTests.xctest */,
 				5BB86C452C9B926600D81390 /* Mini Watch AppUITests.xctest */,
 			);
 			name = Products;
@@ -228,7 +193,6 @@
 			children = (
 				5BFAE9512C79566D003FE344 /* Assets.xcassets */,
 				5B955FCA2C8961C300FC2C8B /* Info.plist */,
-				5B12EDBB2C8966B800022E0D /* LocationManager.swift */,
 				5BFAE94B2C79566C003FE344 /* PhosterityApp.swift */,
 				5BFAE9532C79566D003FE344 /* Preview Content */,
 				5B9964B22C8A518600347354 /* Views */,
@@ -244,18 +208,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5BFAE95D2C79566D003FE344 /* PhosterityTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhosterityTests;
-			sourceTree = "<group>";
-		};
 		5BFAE9672C79566D003FE344 /* PhosterityUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5BFAE9682C79566D003FE344 /* PhosterityUITests.swift */,
-				5BFAE96A2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift */,
+				5B5B058A2CAC837E0088DBC1 /* PhotoDetailUITests.swift */,
+				5B5B05882CAB45890088DBC1 /* PhotoDetailListUITests.swift */,
 			);
 			path = PhosterityUITests;
 			sourceTree = "<group>";
@@ -274,6 +231,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5BE429EF2C9E596E0001AA29 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5BB86C2D2C9B926400D81390 /* Mini Watch App */,
@@ -286,29 +244,6 @@
 			productReference = 5BB86C2C2C9B926400D81390 /* Mini Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BB86C3A2C9B926600D81390 /* Mini Watch AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BB86C582C9B926600D81390 /* Build configuration list for PBXNativeTarget "Mini Watch AppTests" */;
-			buildPhases = (
-				5BB86C372C9B926600D81390 /* Sources */,
-				5BB86C382C9B926600D81390 /* Frameworks */,
-				5BB86C392C9B926600D81390 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BB86C3D2C9B926600D81390 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5BB86C3E2C9B926600D81390 /* Mini Watch AppTests */,
-			);
-			name = "Mini Watch AppTests";
-			packageProductDependencies = (
-			);
-			productName = "Mini Watch AppTests";
-			productReference = 5BB86C3B2C9B926600D81390 /* Mini Watch AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5BB86C442C9B926600D81390 /* Mini Watch AppUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB86C592C9B926600D81390 /* Build configuration list for PBXNativeTarget "Mini Watch AppUITests" */;
@@ -320,6 +255,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B762BD92C9E5E1C0004E86C /* PBXTargetDependency */,
 				5BB86C472C9B926600D81390 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
@@ -356,24 +292,6 @@
 			productReference = 5BFAE9482C79566C003FE344 /* Phosterity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BFAE9592C79566D003FE344 /* PhosterityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BFAE9712C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityTests" */;
-			buildPhases = (
-				5BFAE9562C79566D003FE344 /* Sources */,
-				5BFAE9572C79566D003FE344 /* Frameworks */,
-				5BFAE9582C79566D003FE344 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BFAE95C2C79566D003FE344 /* PBXTargetDependency */,
-			);
-			name = PhosterityTests;
-			productName = PhosterityTests;
-			productReference = 5BFAE95A2C79566D003FE344 /* PhosterityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5BFAE9632C79566D003FE344 /* PhosterityUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BFAE9742C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityUITests" */;
@@ -385,6 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B762BD32C9E5E0D0004E86C /* PBXTargetDependency */,
 				5BFAE9662C79566D003FE344 /* PBXTargetDependency */,
 			);
 			name = PhosterityUITests;
@@ -405,20 +324,12 @@
 					5BB86C2B2C9B926400D81390 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					5BB86C3A2C9B926600D81390 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 5BB86C2B2C9B926400D81390;
-					};
 					5BB86C442C9B926600D81390 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 5BB86C2B2C9B926400D81390;
 					};
 					5BFAE9472C79566C003FE344 = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					5BFAE9592C79566D003FE344 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 5BFAE9472C79566C003FE344;
 					};
 					5BFAE9632C79566D003FE344 = {
 						CreatedOnToolsVersion = 15.4;
@@ -444,10 +355,8 @@
 			projectRoot = "";
 			targets = (
 				5BFAE9472C79566C003FE344 /* Phosterity */,
-				5BFAE9592C79566D003FE344 /* PhosterityTests */,
 				5BFAE9632C79566D003FE344 /* PhosterityUITests */,
 				5BB86C2B2C9B926400D81390 /* Mini Watch App */,
-				5BB86C3A2C9B926600D81390 /* Mini Watch AppTests */,
 				5BB86C442C9B926600D81390 /* Mini Watch AppUITests */,
 			);
 		};
@@ -455,13 +364,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		5BB86C2A2C9B926400D81390 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BB86C392C9B926600D81390 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -484,13 +386,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BFAE9582C79566D003FE344 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BFAE9622C79566D003FE344 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,13 +397,6 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		5BB86C282C9B926400D81390 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BB86C372C9B926600D81390 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,7 +416,6 @@
 			files = (
 				5B97CCCB2C8BFDF90067CFFF /* PhotoDetailView+DetailMap.swift in Sources */,
 				5B97CCC92C8BDEF60067CFFF /* IndexView+PhotoList.swift in Sources */,
-				5B12EDBC2C8966B800022E0D /* LocationManager.swift in Sources */,
 				5B9964B02C8A459000347354 /* PhotoDetailView.swift in Sources */,
 				5B9964B82C8A6E4600347354 /* PhotoDetailView+DetailRow.swift in Sources */,
 				5B97CCC72C8BDD5E0067CFFF /* IndexView+PhotoMap.swift in Sources */,
@@ -537,33 +424,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BFAE9562C79566D003FE344 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BFAE9602C79566D003FE344 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BFAE9692C79566D003FE344 /* PhosterityUITests.swift in Sources */,
-				5BFAE96B2C79566D003FE344 /* PhosterityUITestsLaunchTests.swift in Sources */,
+				5B5B05892CAB45940088DBC1 /* PhotoDetailListUITests.swift in Sources */,
+				5B5B058B2CAC83850088DBC1 /* PhotoDetailUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B762BD32C9E5E0D0004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B762BD22C9E5E0D0004E86C /* SwiftLintBuildToolPlugin */;
+		};
+		5B762BD92C9E5E1C0004E86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B762BD82C9E5E1C0004E86C /* SwiftLintBuildToolPlugin */;
+		};
 		5B9964B52C8A64CE00347354 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 5B9964B42C8A64CE00347354 /* SwiftLintBuildToolPlugin */;
-		};
-		5BB86C3D2C9B926600D81390 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BB86C2B2C9B926400D81390 /* Mini Watch App */;
-			targetProxy = 5BB86C3C2C9B926600D81390 /* PBXContainerItemProxy */;
 		};
 		5BB86C472C9B926600D81390 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -575,10 +458,9 @@
 			target = 5BB86C2B2C9B926400D81390 /* Mini Watch App */;
 			targetProxy = 5BB86C4D2C9B926600D81390 /* PBXContainerItemProxy */;
 		};
-		5BFAE95C2C79566D003FE344 /* PBXTargetDependency */ = {
+		5BE429EF2C9E596E0001AA29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5BFAE9472C79566C003FE344 /* Phosterity */;
-			targetProxy = 5BFAE95B2C79566D003FE344 /* PBXContainerItemProxy */;
+			productRef = 5BE429EE2C9E596E0001AA29 /* SwiftLintBuildToolPlugin */;
 		};
 		5BFAE9662C79566D003FE344 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -601,13 +483,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mini;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tegandbiscuits.Phosterity;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tegandbiscuits.phosterity;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.Phosterity.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.phosterity.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -631,59 +513,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mini;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tegandbiscuits.Phosterity;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tegandbiscuits.phosterity;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.Phosterity.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.phosterity.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.0;
-			};
-			name = Release;
-		};
-		5BB86C532C9B926600D81390 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2X7LT3N36;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tegandbiscuits.Phosterity.Mini-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mini Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.0;
-			};
-			name = Debug;
-		};
-		5BB86C542C9B926600D81390 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2X7LT3N36;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tegandbiscuits.Phosterity.Mini-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mini Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
@@ -913,44 +755,6 @@
 			};
 			name = Release;
 		};
-		5BFAE9722C79566D003FE344 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2X7LT3N36;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.PhosterityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phosterity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phosterity";
-			};
-			name = Debug;
-		};
-		5BFAE9732C79566D003FE344 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2X7LT3N36;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tegandbiscuits.PhosterityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phosterity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phosterity";
-			};
-			name = Release;
-		};
 		5BFAE9752C79566D003FE344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -997,15 +801,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BB86C582C9B926600D81390 /* Build configuration list for PBXNativeTarget "Mini Watch AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BB86C532C9B926600D81390 /* Debug */,
-				5BB86C542C9B926600D81390 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5BB86C592C9B926600D81390 /* Build configuration list for PBXNativeTarget "Mini Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1029,15 +824,6 @@
 			buildConfigurations = (
 				5BFAE96F2C79566D003FE344 /* Debug */,
 				5BFAE9702C79566D003FE344 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5BFAE9712C79566D003FE344 /* Build configuration list for PBXNativeTarget "PhosterityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BFAE9722C79566D003FE344 /* Debug */,
-				5BFAE9732C79566D003FE344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1081,12 +867,27 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
 		};
+		5B762BD22C9E5E0D0004E86C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5B762BD82C9E5E1C0004E86C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
 		5B97CCC22C8BD2650067CFFF /* BottomSheet */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B97CCC12C8BD2230067CFFF /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
 		};
 		5B9964B42C8A64CE00347354 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5BE429EE2C9E596E0001AA29 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B9964B32C8A645700347354 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";

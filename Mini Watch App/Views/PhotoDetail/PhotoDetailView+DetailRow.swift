@@ -8,9 +8,12 @@ extension PhotoDetailView {
 
     var body: some View {
       VStack(alignment: .leading) {
-        Text(title)
+        Text("\(title):")
         Text(value).foregroundStyle(.secondary)
       }
+      .accessibilityElement(children: .ignore)
+      .accessibilityLabel("\(title): \(value)")
+      .accessibilityIdentifier("\(title) row")
     }
   }
 }

@@ -10,8 +10,8 @@ struct PhotoDetailView: View {
   var body: some View {
     List {
       Section(header: Text("Date Time")) {
-        DetailRow(title: "Date:", value: String(photoDetail.formattedDate()))
-        DetailRow(title: "Time:", value: String(photoDetail.formattedTime()))
+        DetailRow(title: "Date", value: String(photoDetail.formattedDate()))
+        DetailRow(title: "Time", value: String(photoDetail.formattedTime()))
       }
 
       Section(header: Text("Location")) {
@@ -25,6 +25,7 @@ struct PhotoDetailView: View {
       .listRowInsets(EdgeInsets())
       .accessibilityLabel(Text("Map"))
     }
+    .navigationTitle(Text(photoDetail.formattedLabel()))
   }
 }
 

@@ -4,7 +4,6 @@ opt_in_rules:
   - anonymous_argument_in_multiline_closure
   - array_init
   - attributes
-  - balanced_xctest_lifecycle
   - closure_body_length
   - closure_end_indentation
   - closure_spacing
@@ -46,7 +45,6 @@ opt_in_rules:
   - ibinspectable_in_extension
   - identical_operands
   - implicit_return
-  - implicitly_unwrapped_optional
   - indentation_width
   - joined_default_parameter
   - last_where
@@ -82,7 +80,6 @@ opt_in_rules:
   - pattern_matching_keywords
   - period_spacing
   - prefer_key_path
-  - prefer_nimble
   - prefer_self_in_static_references
   - prefer_self_type_over_type_of_self
   - prefer_zero_over_explicit_init
@@ -135,3 +132,6 @@ opt_in_rules:
 
 indentation_width:
   indentation_width: 2
+
+trailing_comma:
+  mandatory_comma: true
